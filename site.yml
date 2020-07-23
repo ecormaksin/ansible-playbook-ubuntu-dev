@@ -11,4 +11,4 @@
     - docker
     - java
     - cloudfoundry-cli
-    # - cloudfoundry-cfdev
+    - cloudfoundry-cfdev
