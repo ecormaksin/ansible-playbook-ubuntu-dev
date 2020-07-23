@@ -1,0 +1,3 @@
+- name: "Cloud Foundry CF Dev | インストールする"
+  ignore_errors: "{{ ansible_check_mode }}"
+  shell: cf install-plugin -r CF-Community cfdev

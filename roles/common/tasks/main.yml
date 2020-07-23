@@ -1,0 +1,3 @@
+- include: sub/update_system.yml
+- include: sub/install_vim.yml
+- include: sub/install_tmux.yml

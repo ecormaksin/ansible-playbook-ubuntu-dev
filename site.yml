@@ -1,0 +1,14 @@
+- hosts: all
+  roles:
+    - common
+
+- hosts: develop
+  roles:
+    - google-chrome
+    - vscode
+    - git
+    - vboxguest
+    - docker
+    - java
+    - cloudfoundry-cli
+    # - cloudfoundry-cfdev

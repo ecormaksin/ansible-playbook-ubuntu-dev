@@ -1,0 +1,12 @@
+# このバージョンがインストールされているかどうかを処理の判定基準とする
+virtualbox_version: 6.1.12
+# VBoxGuestAdditions_{{ virtualbox_version }}.isoファイルのチェックサム（http://download.virtualbox.org/virtualbox/{{ virtualbox_version }}/SHA256SUMS）
+iso_checksum: "sha256:226eef0bb337a8375f6b659168c6eaf98b74a68782b9885b40ce9443fdb2ac16"
+# isoファイルのダウンロードディレクトリ
+iso_download_path: "/opt/vboxguest"
+# isoファイルのマウントパス
+iso_mount_path: /mnt/virtualbox
+# isoファイルのダウンロード先パス
+virtualbox_iso_path: "{{iso_download_path}}/VBoxGuestAdditions_{{virtualbox_version}}.iso"
+# x11ありでインストールする場合に変数と値を定義しておく
+virtualbox_x11: true

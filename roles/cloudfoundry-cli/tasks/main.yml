@@ -1,0 +1,27 @@
+- name: "Cloud Foundry Cli | 公式PGPキーを追加する"
+  become: yes
+  ignore_errors: "{{ ansible_check_mode }}"
+  apt_key:
+    url: https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key
+    state: present
+
+- name: "Cloud Foundry Cli | リポジトリを追加する"
+  become: yes
+  ignore_errors: "{{ ansible_check_mode }}"
+  apt_repository:
+    repo: deb https://packages.cloudfoundry.org/debian stable main
+    filename: cloudfoundry-cli 
+    state: present
+
+- name: "Cloud Foundry Cli | リポジトリ追加後に再びパッケージを最新化する"
+  become: yes
+  apt:
+    name: '*'
+    state: latest
+
+- name: "Cloud Foundry Cli | インストールする"
+  become: yes
+  ignore_errors: "{{ ansible_check_mode }}"
+  apt:
+    name: cf-cli
+    state: present
