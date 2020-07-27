@@ -5,10 +5,11 @@
 - hosts: develop
   roles:
     - google-chrome
-    - vscode
-    - git
-    - vboxguest
-    - docker
     - java
-    - cloudfoundry-cli
-    - cloudfoundry-cfdev
+    - git
+    - vscode
+    - docker
+    - vboxguest
+    - playonlinux
+    # - cloudfoundry-cli
+    # - cloudfoundry-cfdev
