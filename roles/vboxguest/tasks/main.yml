@@ -45,11 +45,10 @@
     ignore_errors: "{{ ansible_check_mode }}"
     apt:
       name:
-        - kernel 
-        - kernel-headers 
-        - kernel-devel
-        - bzip2
+        - build-essential
         - gcc
+        - make
+        - perl
       state: present
 
   - name: "VirtualBox Guest Additions | 現在インストールされているVirtualBox関連パッケージを取得する"

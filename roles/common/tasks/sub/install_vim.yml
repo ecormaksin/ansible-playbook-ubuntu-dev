@@ -14,7 +14,8 @@
       if [ $? -eq 0 ]; then
         echo "already changed."
       else
-        echo -e "\nalias vi='vim'" >> "{{ etc.profile.file.path }}"
+        echo "" >> "{{ etc.profile.file.path }}"
+        echo "alias vi='vim'" >> "{{ etc.profile.file.path }}"
         . "{{ etc.profile.file.path }}"
       fi
 
