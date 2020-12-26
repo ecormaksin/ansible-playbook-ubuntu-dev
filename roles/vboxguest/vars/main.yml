@@ -1,7 +1,7 @@
 # このバージョンがインストールされているかどうかを処理の判定基準とする
-virtualbox_version: 6.1.14
+virtualbox_version: 6.1.16
 # VBoxGuestAdditions_{{ virtualbox_version }}.isoファイルのチェックサム（http://download.virtualbox.org/virtualbox/{{ virtualbox_version }}/SHA256SUMS）
-iso_checksum: "sha256:dd9f176abb89043c01cea7ec7e20130e76db71bd83beafeb2dc5858d4c9c86cd"
+iso_checksum: "sha256:88db771a5efd7c048228e5c1e0b8fba56542e9d8c1b75f7af5b0c4cf334f0584"
 # isoファイルのダウンロードディレクトリ
 iso_download_path: "/opt/vboxguest"
 # isoファイルのマウントパス
