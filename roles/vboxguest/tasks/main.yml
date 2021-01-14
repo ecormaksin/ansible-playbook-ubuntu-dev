@@ -126,15 +126,22 @@
       append: yes
       groups: vboxsf
 
-  - name: "VirtualBox Guest Additions | 再起動する"
-    become: yes
-    ignore_errors: "{{ ansible_check_mode }}"
-    reboot:
+  - block:
 
-  - name: "VirtualBox Guest Additions | 再起動したことを確認する"
-    become: yes
-    ignore_errors: "{{ ansible_check_mode }}"
+    - name: "VirtualBox Guest Additions | 再起動する"
+      become: yes
+      ignore_errors: "{{ ansible_check_mode }}"
+      reboot:
+
+    - name: "VirtualBox Guest Additions | 再起動したことを確認する"
+      debug:
+        msg: "再起動しました"
+    
+    when: inventory_hostname != 'localhost'
+
+  - name: "VirtualBox Guest Additions | 再起動を促す"
     debug:
-      msg: "再起動しました"
+      msg: "再起動してください"
+    when: inventory_hostname == 'localhost'
 
   when: (vbox_guest_version.stdout != virtualbox_version)
