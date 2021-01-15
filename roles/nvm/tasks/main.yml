@@ -1,0 +1,14 @@
+- name: "nvm | インストールされているか確認する"
+  ignore_errors: yes
+  stat: path="{{ ansible_env.HOME }}/.nvm"
+  register: nvm_dir_exists
+
+- block:
+  - name: "nvm | インストールされていない場合にデバッグ出力する"
+    ansible.builtin.debug:
+      msg: "{{ nvm_dir_exists }}"
+
+  - name: "nvm | インストールする"
+    shell: >
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+  when: (not nvm_dir_exists.stat.exists)

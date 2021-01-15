@@ -10,6 +10,7 @@
     - vscode
     - docker
     - vboxguest
+    - nvm
     # - playonlinux
     # - cloudfoundry-cli
     # - cloudfoundry-cfdev
