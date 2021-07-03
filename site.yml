@@ -7,6 +7,10 @@
     - google-chrome
     - java
     - git
+    - golang
+    - ghq
+    - peco
+    - ghq-peco-alias
     - vscode
     - docker
     - vboxguest
