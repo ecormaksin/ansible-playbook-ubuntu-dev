@@ -1,0 +1,6 @@
+go:
+  tarball:
+    file:
+      name: go1.16.5.linux-amd64.tar.gz
+      url: https://golang.org/dl
+      dest: /usr/local/src

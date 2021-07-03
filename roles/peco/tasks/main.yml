@@ -1,0 +1,7 @@
+- name: "Peco | 必要なパッケージをインストールする"
+  become: yes
+  ignore_errors: "{{ ansible_check_mode }}"
+  apt:
+    name: peco
+    update_cache: yes
+    state: present
