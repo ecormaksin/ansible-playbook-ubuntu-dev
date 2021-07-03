@@ -7,5 +7,5 @@
         echo "already changed."
       else
         echo -n "\n" >> $HOME/.bashrc
-        echo 'alias gp='\''$(ghq root)/$(ghq list | peco)'\' >> $HOME/.bashrc
+        echo 'alias gp='\''cd $(ghq root)/$(ghq list | peco)'\' >> $HOME/.bashrc
       fi
