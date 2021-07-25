@@ -1,0 +1,8 @@
+[submodule "roles/vim"]
+	path = roles/vim
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-vim.git
+	ignore = dirty
+[submodule "roles/tmux"]
+	path = roles/tmux
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-tmux.git
+	ignore = dirty

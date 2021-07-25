@@ -1,20 +1,13 @@
 - hosts: all
   roles:
-    - common
-
-- hosts: develop
-  roles:
-    - google-chrome
-    - java
-    - git
-    - golang
-    - ghq
-    - peco
-    - ghq-peco-alias
-    - vscode
-    - docker
-    - vboxguest
-    - nvm
+    - vim
+    - tmux
+    # - google-chrome
+    # - java
+    # - vscode
+    # - docker
+    # - vboxguest
+    # - nvm
     # - playonlinux
     # - cloudfoundry-cli
     # - cloudfoundry-cfdev
