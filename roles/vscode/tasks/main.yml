@@ -1,4 +1,0 @@
-- name: "Visual Studio Code | インストールする"
-  become: yes
-  ignore_errors: "{{ ansible_check_mode }}"
-  shell: snap install --classic code

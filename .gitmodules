@@ -6,3 +6,67 @@
 	path = roles/tmux
 	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-tmux.git
 	ignore = dirty
+[submodule "roles/google-chrome"]
+	path = roles/google-chrome
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-google_chrome.git
+	ignore = dirty
+[submodule "roles/update_upgrade"]
+	path = roles/update_upgrade
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-update-upgrade.git
+	ignore = dirty
+[submodule "roles/ntp_client"]
+	path = roles/ntp_client
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-ntp-client.git
+	ignore = dirty
+[submodule "roles/timezone"]
+	path = roles/timezone
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-timezone.git
+	ignore = dirty
+[submodule "roles/locale_japanese"]
+	path = roles/locale_japanese
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-locale-japanese.git
+	ignore = dirty
+[submodule "roles/docker"]
+	path = roles/docker
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-docker.git
+	ignore = dirty
+[submodule "roles/xfce4"]
+	path = roles/xfce4
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu_xfce4.git
+	ignore = dirty
+[submodule "roles/xrdp"]
+	path = roles/xrdp
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu_xrdp.git
+	ignore = dirty
+[submodule "roles/jdk"]
+	path = roles/jdk
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-jdk.git
+	ignore = dirty
+[submodule "roles/vscode"]
+	path = roles/vscode
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-vscode.git
+	ignore = dirty
+[submodule "roles/customize_shell_prompt"]
+	path = roles/customize_shell_prompt
+	url = git@github.com:ecormaksin/ansible_galaxy_role_customize_shell_prompt.git
+	ignore = dirty
+[submodule "roles/ibus_mozc"]
+	path = roles/ibus_mozc
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-ibus_mozc.git
+	ignore = dirty
+[submodule "roles/golang"]
+	path = roles/golang
+	url = git@github.com:ecormaksin/ansible_galaxy_role_golang_linux.git
+	ignore = dirty
+[submodule "roles/ghq"]
+	path = roles/ghq
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ghq_by_golang_linux.git
+	ignore = dirty
+[submodule "roles/peco"]
+	path = roles/peco
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu_peco.git
+	ignore = dirty
+[submodule "roles/ghq-peco-alias"]
+	path = roles/ghq-peco-alias
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ghq-peco-alias_linux.git
+	ignore = dirty

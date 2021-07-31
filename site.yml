@@ -1,11 +1,23 @@
 - hosts: all
   roles:
+    - update_upgrade
+    - customize_shell_prompt
     - vim
+    - ntp_client
+    - timezone
+    - locale_japanese
     - tmux
-    # - google-chrome
-    # - java
-    # - vscode
-    # - docker
+    - docker
+    - golang
+    - ghq
+    - peco
+    - ghq-peco-alias
+    - xfce4
+    - ibus_mozc
+    - xrdp
+    - google-chrome
+    - jdk
+    - vscode
     # - vboxguest
     # - nvm
     # - playonlinux
