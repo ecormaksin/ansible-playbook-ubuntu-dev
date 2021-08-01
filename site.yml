@@ -6,6 +6,7 @@
     - ntp_client
     - timezone
     - locale_japanese
+    - auto_start_ssh-agent
     - tmux
     - docker
     - golang

@@ -70,3 +70,7 @@
 	path = roles/ghq-peco-alias
 	url = git@github.com:ecormaksin/ansible_galaxy_role_ghq-peco-alias_linux.git
 	ignore = dirty
+[submodule "roles/auto_start_ssh-agent"]
+	path = roles/auto_start_ssh-agent
+	url = git@github.com:ecormaksin/ansible_galaxy_role_auto-start-ssh-agent.git
+	ignore = dirty
