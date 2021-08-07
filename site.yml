@@ -1,24 +1,26 @@
 - hosts: all
   roles:
-    - update_upgrade
-    - customize_shell_prompt
-    - vim
-    - ntp_client
-    - timezone
-    - locale_japanese
-    - auto_start_ssh-agent
-    - tmux
-    - docker
-    - golang
-    - ghq
-    - peco
-    - ghq-peco-alias
-    - xfce4
-    - ibus_mozc
-    - xrdp
-    - google-chrome
-    - jdk
-    - vscode
+    # - update_upgrade
+    # - customize_shell_prompt
+    # - vim
+    # - ntp_client
+    # - timezone
+    # - locale_japanese
+    # - auto_start_ssh-agent
+    - remove_auto_start_ssh-agent
+    - keychain-ssh-keys
+    # - tmux
+    # - docker
+    # - golang
+    # - ghq
+    # - peco
+    # - ghq-peco-alias
+    # - xfce4
+    # - ibus_mozc
+    # - xrdp
+    # - google-chrome
+    # - jdk
+    # - vscode
     # - vboxguest
     # - nvm
     # - playonlinux

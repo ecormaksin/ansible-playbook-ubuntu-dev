@@ -1,0 +1,15 @@
+- name: "Remove auto start ssh-agent | remove file"
+  become: yes
+  ignore_errors: yes
+  file:
+    path: /etc/auto_start_ssh-agent
+    state: absent
+
+- name: "Remove auto start ssh-agent | remove setting"
+  ignore_errors: "{{ ansible_check_mode }}"
+  shell:
+    cmd: |
+      cat $HOME/.bashrc | grep '. /etc/auto_start_ssh-agent' >/dev/null
+      if [ $? -eq 0 ]; then
+          sed -i '/^\. \/etc\/auto_start_ssh-agent$/d' $HOME/.bashrc
+      fi
