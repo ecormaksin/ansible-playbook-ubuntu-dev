@@ -74,3 +74,7 @@
 	path = roles/keychain-ssh-keys
 	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu_keychain-ssh-keys.git
 	ignore = dirty
+[submodule "roles/ssh-settings"]
+	path = roles/ssh-settings
+	url = git@github.com:ecormaksin/ansible_galaxy_role_ssh-settings.git
+	ignore = dirty
