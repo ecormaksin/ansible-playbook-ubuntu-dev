@@ -1,7 +1,7 @@
 - hosts: all
   roles:
     - update_upgrade
-    - customize_shell_prompt
+    # - customize_shell_prompt
     - vim
     - ntp_client
     - timezone
