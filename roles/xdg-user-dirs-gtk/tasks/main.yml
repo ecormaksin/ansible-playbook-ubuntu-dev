@@ -1,0 +1,7 @@
+- name: "xdg-user-dirs-gtk | 必要なパッケージをインストールする"
+  become: yes
+  ignore_errors: "{{ ansible_check_mode }}"
+  apt:
+    name: 
+      - xdg-user-dirs-gtk
+    state: present
