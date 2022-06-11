@@ -1,0 +1,7 @@
+all:
+  hosts:
+    localhost:
+      ansible_host: localhost,
+      ansible_connection: local
+      ansible_user: <ansible_user> # Ansibleを実行する時の一般ユーザーを指定する
+      ansible_become_pass: <ansible_become_pass> # 管理者権限として実行する時のパスワードを指定する
