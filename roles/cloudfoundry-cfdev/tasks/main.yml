@@ -1,5 +1,5 @@
 - name: "Cloud Foundry CF Dev | 必要なパッケージをインストールする"
-  become: yes
+  become: true
   ignore_errors: "{{ ansible_check_mode }}"
   apt:
     name: 
@@ -12,7 +12,7 @@
 # 追加の参考URL https://symfoware.blog.fc2.com/blog-entry-2446.html
 # Ubuntu20.04ではlibvirt-binが存在しなかった
 - name: "Cloud Foundry CF Dev | 必要なパッケージをインストールする"
-  become: yes
+  become: true
   ignore_errors: "{{ ansible_check_mode }}"
   apt:
     name: 

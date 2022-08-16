@@ -1,5 +1,5 @@
 - name: "Play On Linux | インストールする"
-  become: yes
+  become: true
   ignore_errors: "{{ ansible_check_mode }}"
   apt:
     name: playonlinux
