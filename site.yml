@@ -6,7 +6,6 @@
     - ntp_client
     - timezone
     - locale_japanese
-    - keychain-ssh-keys
     - ssh-settings
     - tmux
     - docker
