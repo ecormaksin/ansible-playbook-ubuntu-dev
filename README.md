@@ -16,7 +16,4 @@ ansible-playbook -i ./inventory/target.yml site.yml -vv
 
 # 途中から実行
 ansible-playbook -i ./inventory/target.yml site.yml -vv --start-at="<途中から開始したいタスク名>"
-
-# ローカルで実行
-ansible-playbook -i localhost, -c local -K site.yml -vv
 ```
