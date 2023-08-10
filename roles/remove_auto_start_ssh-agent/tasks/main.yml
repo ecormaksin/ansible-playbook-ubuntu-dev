@@ -1,6 +1,6 @@
 - name: "Remove auto start ssh-agent | remove file"
   become: true
-  ignore_errors: yes
+  ignore_errors: true
   file:
     path: /etc/auto_start_ssh-agent
     state: absent

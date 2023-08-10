@@ -1,5 +1,5 @@
 - name: "nvm | インストールされているか確認する"
-  ignore_errors: yes
+  ignore_errors: true
   stat: path="{{ ansible_env.HOME }}/.nvm"
   register: nvm_dir_exists
 

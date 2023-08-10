@@ -9,4 +9,4 @@ iso_mount_path: /mnt/virtualbox
 # isoファイルのダウンロード先パス
 virtualbox_iso_path: "{{iso_download_path}}/VBoxGuestAdditions_{{virtualbox_version}}.iso"
 # x11ありでインストールする場合に変数と値を定義しておく
-virtualbox_x11: no
+virtualbox_x11: false
