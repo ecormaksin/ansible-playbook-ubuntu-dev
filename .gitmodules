@@ -46,10 +46,6 @@
 	path = roles/vscode
 	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-vscode.git
 	ignore = dirty
-[submodule "roles/customize_shell_prompt"]
-	path = roles/customize_shell_prompt
-	url = git@github.com:ecormaksin/ansible_galaxy_role_customize_shell_prompt.git
-	ignore = dirty
 [submodule "roles/ibus_mozc"]
 	path = roles/ibus_mozc
 	url = git@github.com:ecormaksin/ansible_galaxy_role_ubuntu-ibus_mozc.git
